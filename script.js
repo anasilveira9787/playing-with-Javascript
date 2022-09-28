@@ -2,7 +2,9 @@
 
 
 function changeColor(){
-   circle.classList.add('clicked')    
-}
 
+    
+    circle.classList.toggle('clicked') 
+        
+}
 

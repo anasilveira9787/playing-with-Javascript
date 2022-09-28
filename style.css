@@ -19,6 +19,6 @@ div {
     border-radius: 50%;
 }
 
-div .clicked {
+div.clicked {
     background-color: black;
 }
