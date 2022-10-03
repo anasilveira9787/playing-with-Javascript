@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: black;
 }
 
 div {
@@ -21,4 +22,8 @@ div {
 
 div.clicked {
     background-color: black;
+}
+
+.body-change {
+    background-color: blueviolet;
 }
