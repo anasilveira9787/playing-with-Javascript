@@ -9,8 +9,7 @@ section {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 1px solid #ccc;
-    background: linear-gradient(180deg, rgba(58,180,64,1) 0%, rgba(244,253,29,1) 50%, rgba(252,69,69,1) 100%);
+    background: linear-gradient(180deg, rgb(168, 87, 245) 0%, rgb(138, 43, 226) 50%, rgb(49, 2, 94) 100%);
     overflow: hidden;
 }
 
@@ -20,7 +19,7 @@ section {
     width: 100%;
     z-index: 1;
     overflow: hidden;
-    background: linear-gradient(0, #120c56, #000000);
+    background: linear-gradient(0, rgb(49, 2, 94), #000000);
 }
 
 p {
@@ -37,7 +36,8 @@ span {
     margin: 0 auto !important;
     font-size:3rem;
     color: white;
-    text-shadow: 2px 2px #000;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-family: 'Oswald', sans-serif;
 }
 
 .dblclick {
@@ -46,5 +46,6 @@ span {
 
 .ballsActive {
     display: flex;
+    gap: 10px;
 }
 
