@@ -1,0 +1,50 @@
+section {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ballEmpty {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: linear-gradient(180deg, rgba(58,180,64,1) 0%, rgba(244,253,29,1) 50%, rgba(252,69,69,1) 100%);
+    overflow: hidden;
+}
+
+.ballSeconds,
+.ballMinutes,
+.ballHours {
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(0, #120c56, #000000);
+}
+
+p {
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    display: flex;
+    width: 100%;
+}
+
+span {
+    margin: 0 auto !important;
+    font-size:3rem;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.dblclick {
+    display:none;
+}
+
+.ballsActive {
+    display: flex;
+}
+
