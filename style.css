@@ -1,3 +1,5 @@
+@import url('./time.css');
+
 html * {
     box-sizing: border-box;
     margin: 0;
