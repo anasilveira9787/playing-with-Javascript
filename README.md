@@ -1,3 +1,5 @@
+<p align="right"><a href="./README-pt-br.md">➡️ PT-BR</a></p>
+
 <img align="center" src="./assets/github-header-image.png"></img>
 
 
@@ -26,17 +28,17 @@ This is a beginner-friendly repository for educational purposes that work as a p
 * [x] Fun
 
 
-### Languages and tools you'll need:
+### Languages and tools you'll need
 
-![Stacks](https://skillicons.dev/icons?i=html,css,js,md&perline=8&theme=light)
+![Stacks](https://skillicons.dev/icons?i=html,css,js,git&perline=8&theme=light)
 
 
 ### What is HacktoberFest?
 
 <div><img align="right" src="https://pbs.twimg.com/profile_images/1567906020831150081/oJ7mKaaj_400x400.jpg" height="100">
 
-Hacktoberfest is a month long virtual festival presented by DigitalOcean, appwrite and docker to celebrate contributions and encourage participation in the open source community.
-It is the easiest way to get started into open source and everyone are welcome!
+Hacktoberfest is a virtual festival that takes place throughout October, hosted by DigitalOcean, appwrite and docker, to celebrate contributions and encourage participation in the open source community.
+It's the easiest way to get started in the open-source universe and everyone is welcome to participate!
 
 [Click here to register](https://hacktoberfest.com/), make 4 valid Pull Requests until the end of the month and earn free SWAG!
 
@@ -48,7 +50,7 @@ If you have any questions, use the issue's comments to ask the community for hel
 
 Don't complete more than one challenge, leave it to other devs to participate.
 
-You can also contribute by suggesting other challenges through issues or answering questions through comments.
+You can also contribute by suggesting other challenges through issues or answering questions on the commenting section.
 
 
 ### Step-by-step
