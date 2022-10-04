@@ -1,4 +1,4 @@
-<p align="right"><a href="./README-pt-br.md">➡️ EN-US</a></p>
+<p align="right"><a href="./README.md">➡️ EN-US</a></p>
 
 
 <img align="center" src="./assets/github-header-image.png"></img>
