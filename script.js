@@ -1,4 +1,8 @@
-import {functionTime} from './time.js'
+import startKeyHandler, {
+  setKeyHandler,
+  setShiftKeyHandler
+} from './keyhandlers.js'
+import { functionTime } from './time.js'
 
 const clickCircle = document.querySelector('#circle')
 const ballsTime = document.querySelector('#balls')
@@ -22,3 +26,8 @@ function changeColor(){
         
 }
 
+setKeyHandler('Space', changeColor)
+setShiftKeyHandler('KeyT', changeToTime)
+setKeyHandler('Enter', changeToTime)
+
+startKeyHandler()
