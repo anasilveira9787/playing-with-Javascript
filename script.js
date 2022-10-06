@@ -24,8 +24,7 @@ function changeColor() {
     body.classList.toggle('body-change');
 }
 
-setKeyHandler('Space', changeColor);
 setShiftKeyHandler('KeyT', changeToTime);
-setKeyHandler('Enter', changeToTime);
+setKeyHandler('Space', changeColor);
 
 startKeyHandler();
