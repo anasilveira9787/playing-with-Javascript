@@ -1,5 +1,6 @@
 import { functionTime } from './time.js';
-import startKeyHandler, {
+import {
+    startKeyHandler,
     setKeyHandler,
     setShiftKeyHandler,
 } from './keyhandlers.js';
