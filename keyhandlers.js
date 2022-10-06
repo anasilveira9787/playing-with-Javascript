@@ -1,14 +1,14 @@
 const pressedKeys = {
-  NotDefinedKey() {}
-}
+    NotDefinedKey() {},
+};
 
 const shiftPressedKeys = {
-  NotDefinedKey() {}
-}
+    NotDefinedKey() {},
+};
 
 const ctrlPressedKeys = {
-  NotDefinedKey() {}
-}
+    NotDefinedKey() {},
+};
 
 /**
  *  Define a execução de uma função ao pressionamento de uma "tecla"
@@ -16,7 +16,7 @@ const ctrlPressedKeys = {
  * @param {*} func função a ser executada
  */
 export function setKeyHandler(keyCode, func) {
-  pressedKeys[keyCode] = func
+    pressedKeys[keyCode] = func;
 }
 
 /**
@@ -25,7 +25,7 @@ export function setKeyHandler(keyCode, func) {
  * @param {*} func função a ser executada
  */
 export function setShiftKeyHandler(keyCode, func) {
-  shiftPressedKeys[keyCode] = func
+    shiftPressedKeys[keyCode] = func;
 }
 
 /**
@@ -34,38 +34,40 @@ export function setShiftKeyHandler(keyCode, func) {
  * @param {*} func função a ser executada
  */
 export function setCtrlKeyHandler(keyCode, func) {
-  ctrlPressedKeys[keyCode] = func
+    ctrlPressedKeys[keyCode] = func;
 }
 
 /**
  * Inicia o gerenciamento das teclas pressionadas
  */
-export default function startKeyHandler() {
-  document.addEventListener('keydown', event => {
-    const { code, shiftKey, ctrlKey } = event
-    const ctrlShift = shiftKey && ctrlKey
+export function startKeyHandler() {
+    document.addEventListener('keydown', (event) => {
+        const { code, shiftKey, ctrlKey } = event;
+        const ctrlShift = shiftKey && ctrlKey;
 
-    let callKeyFunction = {}
+        let callKeyFunction = {};
 
-    if (shiftKey) {
-      callKeyFunction =
-        code in shiftPressedKeys
-          ? shiftPressedKeys[code]
-          : shiftPressedKeys['NotDefinedKey']
-    } else if (ctrlKey) {
-      callKeyFunction =
-        code in ctrlPressedKeys
-          ? ctrlPressedKeys[code]
-          : ctrlPressedKeys['NotDefinedKey']
-    } else {
-      callKeyFunction =
-        code in pressedKeys ? pressedKeys[code] : pressedKeys['NotDefinedKey']
-    }
+        if (shiftKey) {
+            callKeyFunction =
+                code in shiftPressedKeys
+                    ? shiftPressedKeys[code]
+                    : shiftPressedKeys['NotDefinedKey'];
+        } else if (ctrlKey) {
+            callKeyFunction =
+                code in ctrlPressedKeys
+                    ? ctrlPressedKeys[code]
+                    : ctrlPressedKeys['NotDefinedKey'];
+        } else {
+            callKeyFunction =
+                code in pressedKeys
+                    ? pressedKeys[code]
+                    : pressedKeys['NotDefinedKey'];
+        }
 
-    // console.log(
-    //   `key code: ${code}, shift pressed: ${shiftKey}, ctrl pressed: ${ctrlKey}`
-    // )
+        // console.log(
+        //   `key code: ${code}, shift pressed: ${shiftKey}, ctrl pressed: ${ctrlKey}`
+        // )
 
-    callKeyFunction()
-  })
+        callKeyFunction();
+    });
 }
