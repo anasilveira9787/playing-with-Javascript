@@ -1,4 +1,9 @@
 import { functionTime } from './time.js';
+import {
+    startKeyHandler,
+    setKeyHandler,
+    setShiftKeyHandler,
+} from './keyhandlers.js';
 
 const clickCircle = document.querySelector('#circle');
 const ballsTime = document.querySelector('#balls');
@@ -18,3 +23,8 @@ function changeColor() {
     clickCircle.classList.toggle('clicked');
     body.classList.toggle('body-change');
 }
+
+setShiftKeyHandler('KeyT', changeToTime);
+setKeyHandler('Space', changeColor);
+
+startKeyHandler();
