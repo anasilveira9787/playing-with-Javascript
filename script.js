@@ -10,7 +10,7 @@ const ballsTime = document.querySelector('#balls');
 const textMinutes = document.querySelector('.textMinutes');
 
 textMinutes.addEventListener('click', changeToTime);
-clickCircle.addEventListener('dblclick', changeToTime);
+clickCircle.addEventListener('click', changeToTime);
 clickCircle.addEventListener('click', changeColor);
 
 function changeToTime() {
