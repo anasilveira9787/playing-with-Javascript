@@ -29,3 +29,7 @@ div.clicked {
 .body-change {
     background-color: blueviolet;
 }
+
+#circle {
+    cursor: pointer;
+}
